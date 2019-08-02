@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+        
+        .success {
+            background: green;
+        }
+        
+        .error {
+            background: red;
+        }
+    </style>
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-dark">
+
+    <div class="container bg-white" style="border:2px solid black;">
+        <div class="container bg-white" style="border:0.05px solid rgb(121, 103, 103);">
+            <h1 class="text-center">Kvaba employers list</h1>
+        </div>
+        <form id="book-form">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Position:</label>
+            </div>
+            <select class="custom-select" id="hiredFor">
+                <option selected>Choose...</option>
+                <option value="Frontend developer">Frontend Developer</option>
+                <option value="Backend developer">Backend Developer</option>
+                <option value="Fullstack ">Full Stack</option>
+                <option value="CEO">CEO</option>
+            </select>
+            <div>
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Job Type:</label>
+                </div>
+                <select class="custom-select" id="jobType">
+                    <option selected>Choose...</option>
+                    <option value="Part Time">Part-time</option>
+                    <option value="Full Time">Full-time</option>
+                </select>
+                <div>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="u-full-width">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" class="u-full-width">
+                </div>
+                <div>
+                    <label for="egn">Worker ID</label>
+                    <input type="text" id="egn" class="u-full-width">
+                </div>
+                <div class="pb-2">
+                    <label for="salary">Gross Salary</label>
+                    <br>
+                    <input type="number" id="salary" class="">
+                </div>
+                <input type="submit" value="Submit" class="u-full-width bg-dark text-light">
+        </form>
+        <div class="pt-3 ">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for name..." title="Type in a name" class="u-full-width">
+        </div>
+
+
+        <table class="u-full-width" id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Job type</th>
+                    <th>Worker ID</th>
+                    <th>Salary</th>
+                    <th>Net Salary</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="appES6.js"></script>
+
+</body>
+
+</html>
